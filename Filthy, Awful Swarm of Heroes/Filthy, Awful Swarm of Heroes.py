@@ -43,6 +43,8 @@ included_colours.append(Color(0, 255, 255))
 # these are the unique identifiers for the game objects
 object_unique_id = 1000
 
+ignore_input_tmr = 0
+
 # this is the only game object included in the "toy" - rename it when5 you decide what
 # these objects will represent within the "magic circle" of your final game submission
 # and feel free to modify it as required, as long as you preserve the core mechanics 
@@ -531,9 +533,14 @@ def update_trap(game_data, trap):
 			
 	
 def update_swarm(game_objects, game_data, mouse_dict):
+	global ignore_input_tmr
 	# visit all the game objects...
 	if mouse_dict[MOUSE_LMB]:
-		game_data["cur_color"] = (game_data["cur_color"] + 1) % len(included_colours)		
+		if ignore_input_tmr > 0:
+			ignore_input_tmr = max(ignore_input_tmr - delta_time*2, 0)
+		else:
+			ignore_input_tmr = 0.1
+			game_data["cur_color"] = (game_data["cur_color"] + 1) % len(included_colours)		
 	elif(mouse_dict[MOUSE_RMB]):
 		for sw in game_data["swarm"]:
 			if(sw["active"] == True):
@@ -643,7 +650,7 @@ def render(game_data, game_objects):
 #### ---------------------------------------------------------------------------------------------------------------------- ####
 
 def render_main_menu(game_data, entity):
-	''' Replace this and the return statement with your code '''
+	''' Replace this and the return statement with code '''
 	return
 
 	
@@ -850,7 +857,7 @@ def main():
 	ignore_tmr = 0
 	
 	game_data = initialize();
-	# create a clock
+	#create a clock
 	clock = pygame.time.Clock()
 
 	game_objects = []
