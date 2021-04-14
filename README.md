@@ -4,7 +4,7 @@
   The specifications of this assignment required us to use Python and Utilize the Pygame library. This was a first year project and the 
 structure/design of my code is reflective of such. I spent around 3-5 days on this assignment.
 
-[![Video Thumbnail](https://www.youtube.com/watch?v=NccEsRrmjR0&ab_channel=KarimTantawy)
+https://www.youtube.com/watch?v=NccEsRrmjR0&ab_channel=KarimTantawy
 
 In Retrospect I would improve on the project in the following ways,
 1. Would design project according to MVC Model
