@@ -1,8 +1,7 @@
 ![Image of Cover](https://github.com/KarimTantawy/COMP1501-Filthy-Awful-Swarm-of-Heroes-Assignment-2-Python-Pygame/blob/master/Filthy%2C%20Awful%20Swarm%20of%20Heroes/assets/Main_Menu.png)
 # Filthy, Awful Swarm of Heroes
 #### SCHOOL PROJECT - COMP 1501 - Winter 2019 Semester
-  The specifications of this assignment required us to use Python and Utilize the Pygame library. This was a first year project and the 
-structure/design of my code is reflective of such. I spent around 3-5 days on this assignment.
+  This assignment required us to use Python and Utilize the Pygame library. The prompt for the game was that there had to be colored "balls" that move towards other "balls".
 
 https://www.youtube.com/watch?v=NccEsRrmjR0&ab_channel=KarimTantawy
 
