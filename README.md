@@ -8,7 +8,7 @@ https://www.youtube.com/watch?v=NccEsRrmjR0&ab_channel=KarimTantawy
 
 In Retrospect I would improve on the project in the following ways,
 1. Would design project according to MVC Model
-1. Remove every global variable(really bad practice)
+1. Remove every global variable
 1. Would create a 'character' superclass which all entities would inherit from
 1. Would implement 'observer' design pattern to keep track of game state in level
    1. keep track of existing player character(s)
